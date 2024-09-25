@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Informations sur le véhicule{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Informations sur le véhicule</h5>
+                <p class="card-text">Marque : {{ vehicle.model.brand.name }}</p>
+                <p class="card-text">Modèle : {{ vehicle.model.name }}</p>
+                <p class="card-text">Type : {{ vehicle.type.name }}</p>
+                <p class="card-text">Capacité : {{ vehicle.capacity }} passagers</p>
+                <p class="card-text">Tarif de location : {{ vehicle.price }}€ par jour</p>
+                <p class="card-text">Plaque d'immatriculation : {{ vehicle.numberplate }}</p>
+                <a href="reservation/{{ vehicle.id }}" class="btn btn-primary">Réserver</a>
+            </div>
+        </div>
+
+        <a href="/vehicle">Retour</a>
+    </div>
+
+{% endblock %}
