@@ -9,6 +9,7 @@ use App\Entity\Option;
 use App\Entity\Reservation;
 use App\Entity\State;
 use App\Entity\Type;
+use App\Entity\User;
 use App\Entity\Vehicle;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
@@ -179,6 +180,20 @@ class AppFixtures extends Fixture
         $reservation->setState($stateTab[2]);
         $reservationTab[] = $reservation;
 
+        $user = new User();
+        $user->setEmail('admin@admin.com');
+        $user->setPassword('admin');
+        $user->setRoles(['ROLE_ADMIN']);
+        $user->setUsername('Admin');
+        $userTab[] = $user;
+
+        $user = new User();
+        $user->setEmail('client@client.com');
+        $user->setPassword('client');
+        $user->setRoles(['ROLE_CLIENT']);
+        $user->setUsername('Client');
+        $userTab[] = $user;
+
         foreach ($brandTab as $brand) {
             $manager->persist($brand);
         }
@@ -209,6 +224,10 @@ class AppFixtures extends Fixture
 
         foreach ($reservationTab as $reservation) {
             $manager->persist($reservation);
+        }
+
+        foreach ($userTab as $user) {
+            $manager->persist($user);
         }
 
         $manager->flush();
