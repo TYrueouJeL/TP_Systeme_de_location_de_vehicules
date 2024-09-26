@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Suppression de véhicule{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <h2>Suppression de véhicule</h2>
+
+        <p>Voulez-vous vraiment supprimer ce véhicule ?</p>
+
+        <a href="/vehicle/deleteVehicle/{{ vehicle.id }}" class="btn btn-primary">Oui</a>
+        <a href="/vehicle/delete" class="btn btn-primary">Non</a>
+    </div>
+
+{% endblock %}
