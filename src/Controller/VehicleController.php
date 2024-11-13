@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Customer;
+use App\Entity\Reservation;
 use App\Entity\Vehicle;
 use App\Form\ReservationFormType;
 use App\Form\VehicleCreateFormType;
@@ -24,11 +25,21 @@ class VehicleController extends AbstractController
     }
 
     #[Route('/vehicle/detail/{id}', name: 'app_vehicle_detail')]
-    public function detail(int $id, VehicleRepository $vehicleRepository): Response
+    public function detail(int $id, VehicleRepository $vehicleRepository, Request $request): Response
     {
+        $reservation = new Customer();
+        $form = $this->createForm(ReservationFormType::class, $reservation);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            return $this->redirectToRoute('app_vehicle');
+        }
+
         return $this->render('vehicle/detail.html.twig', [
             'vehicleId' => $id,
             'vehicle' => $vehicleRepository->find($id),
+            'form' => $form,
         ]);
     }
 

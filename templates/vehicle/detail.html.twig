@@ -14,7 +14,8 @@
                 <p class="card-text">Capacité : {{ vehicle.capacity }} passagers</p>
                 <p class="card-text">Tarif de location : {{ vehicle.price }}€ par jour</p>
                 <p class="card-text">Plaque d'immatriculation : {{ vehicle.numberplate }}</p>
-                <a href="reservation/{{ vehicle.id }}" class="btn btn-primary">Réserver</a>
+
+                {{ form(form) }}
             </div>
         </div>
 

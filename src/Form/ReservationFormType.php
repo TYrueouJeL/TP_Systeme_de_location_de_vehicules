@@ -13,14 +13,54 @@ class ReservationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('lastname')
-            ->add('firstname')
-            ->add('address')
-            ->add('postCode')
-            ->add('city')
-            ->add('email')
-            ->add('phone')
-            ->add('drivingLicense')
+            ->add('lastname', null, [
+                'label' => 'Nom',
+                'attr' => [
+                    'placeholder' => 'Nom',
+                ]
+            ])
+            ->add('firstname', null, [
+                'label' => 'Prénom',
+                'attr' => [
+                    'placeholder' => 'Prénom',
+                ]
+            ])
+            ->add('address', null, [
+                'label' => 'Adresse',
+                'attr' => [
+                    'placeholder' => 'Adresse',
+                ]
+            ])
+            ->add('postCode', null, [
+                'label' => 'Code postal',
+                'attr' => [
+                    'placeholder' => 'Code postal',
+                ]
+            ])
+            ->add('city', null, [
+                'label' => 'Ville',
+                'attr' => [
+                    'placeholder' => 'Ville',
+                ]
+            ])
+            ->add('email', null, [
+                'label' => 'Mail',
+                'attr' => [
+                    'placeholder' => 'Mail',
+                ]
+            ])
+            ->add('phone', null, [
+                'label' => 'Numéro de téléphone',
+                'attr' => [
+                    'placeholder' => 'Numéro de téléphone',
+                ]
+            ])
+            ->add('drivingLicense', null, [
+                'label' => 'Permis de conduire',
+                'attr' => [
+                    'placeholder' => 'Permis de conduire',
+                ]
+            ])
             ->add('submit', SubmitType::class, [
                 'label' =>'Réserver',
                 'attr' =>[

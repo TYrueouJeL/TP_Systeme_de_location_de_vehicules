@@ -45,6 +45,20 @@ class AppFixtures extends Fixture
         $model->setBrand($brandTab[2]);
         $modelTab[] = $model;
 
+//        $user = new User();
+//        $user->setEmail('admin@admin.com');
+//        $user->setPassword('admin');
+//        $user->setRoles(['ROLE_ADMIN']);
+//        $user->setUsername('Admin');
+//        $userTab[] = $user;
+//
+//        $user = new User();
+//        $user->setEmail('client@client.com');
+//        $user->setPassword('client');
+//        $user->setRoles(['ROLE_CLIENT']);
+//        $user->setUsername('Client');
+//        $userTab[] = $user;
+
         $customer = new Customer();
         $customer->setFirstname('John');
         $customer->setLastname('Doe');
@@ -180,20 +194,6 @@ class AppFixtures extends Fixture
         $reservation->setState($stateTab[2]);
         $reservationTab[] = $reservation;
 
-        $user = new User();
-        $user->setEmail('admin@admin.com');
-        $user->setPassword('admin');
-        $user->setRoles(['ROLE_ADMIN']);
-        $user->setUsername('Admin');
-        $userTab[] = $user;
-
-        $user = new User();
-        $user->setEmail('client@client.com');
-        $user->setPassword('client');
-        $user->setRoles(['ROLE_CLIENT']);
-        $user->setUsername('Client');
-        $userTab[] = $user;
-
         foreach ($brandTab as $brand) {
             $manager->persist($brand);
         }
@@ -226,9 +226,9 @@ class AppFixtures extends Fixture
             $manager->persist($reservation);
         }
 
-        foreach ($userTab as $user) {
-            $manager->persist($user);
-        }
+//        foreach ($userTab as $user) {
+//            $manager->persist($user);
+//        }
 
         $manager->flush();
     }
