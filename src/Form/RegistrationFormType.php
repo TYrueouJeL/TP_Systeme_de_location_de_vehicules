@@ -18,6 +18,48 @@ class RegistrationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+            ->add('firstname', null, [
+                'label' => 'Prénom',
+                'attr' => [
+                    'placeholder' => 'Prénom',
+                ]
+            ])
+            ->add('lastname', null, [
+                'label' => 'Nom',
+                'attr' => [
+                    'placeholder' => 'Nom',
+                ]
+            ])
+            ->add('address', null, [
+                'label' => 'Adresse',
+                'attr' => [
+                    'placeholder' => 'Adresse',
+                ]
+            ])
+            ->add('post_code', null, [
+                'label' => 'Code postal',
+                'attr' => [
+                    'placeholder' => 'Code postal',
+                ]
+            ])
+            ->add('city', null, [
+                'label' => 'Ville',
+                'attr' => [
+                    'placeholder' => 'Ville',
+                ]
+            ])
+            ->add('phone', null, [
+                'label' => 'Numéro de téléphone',
+                'attr' => [
+                    'placeholder' => 'Numéro de téléphone',
+                ]
+            ])
+            ->add('driving_license', null, [
+                'label' => 'Permis de conduire',
+                'attr' => [
+                    'placeholder' => 'Permis de conduire',
+                ]
+            ])
             ->add('email', null, [
                 'label' => 'Adresse mail',
                 'attr' => [
