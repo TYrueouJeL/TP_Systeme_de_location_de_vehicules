@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "772af345cacc17f232d0846fe738b3a5",
+    "content-hash": "9f6ec5a6be5b3f9163c13f850c7b2d0a",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -5484,16 +5484,16 @@
         },
         {
             "name": "symfony/security-bundle",
-            "version": "v7.1.4",
+            "version": "v7.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "5e10107856ff64d477c61fed7bcbb8a16125ea01"
+                "reference": "7df1d3d431be03fbeb1b162eebca424005b48cdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/5e10107856ff64d477c61fed7bcbb8a16125ea01",
-                "reference": "5e10107856ff64d477c61fed7bcbb8a16125ea01",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/7df1d3d431be03fbeb1b162eebca424005b48cdd",
+                "reference": "7df1d3d431be03fbeb1b162eebca424005b48cdd",
                 "shasum": ""
             },
             "require": {
@@ -5570,7 +5570,7 @@
             "description": "Provides a tight integration of the Security component into the Symfony full-stack framework",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/security-bundle/tree/v7.1.4"
+                "source": "https://github.com/symfony/security-bundle/tree/v7.1.6"
             },
             "funding": [
                 {
@@ -5586,7 +5586,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-20T11:38:55+00:00"
+            "time": "2024-09-25T14:20:29+00:00"
         },
         {
             "name": "symfony/security-core",
@@ -6014,16 +6014,16 @@
         },
         {
             "name": "symfony/stimulus-bundle",
-            "version": "v2.19.0",
+            "version": "v2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stimulus-bundle.git",
-                "reference": "5e2e1aff3e7cff2875e2f901437543fda9ca9910"
+                "reference": "e5f7747b514865719e0990389ce35a9b71bebb48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/5e2e1aff3e7cff2875e2f901437543fda9ca9910",
-                "reference": "5e2e1aff3e7cff2875e2f901437543fda9ca9910",
+                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/e5f7747b514865719e0990389ce35a9b71bebb48",
+                "reference": "e5f7747b514865719e0990389ce35a9b71bebb48",
                 "shasum": ""
             },
             "require": {
@@ -6063,7 +6063,7 @@
                 "symfony-ux"
             ],
             "support": {
-                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.19.0"
+                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.21.0"
             },
             "funding": [
                 {
@@ -6079,7 +6079,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-30T19:26:23+00:00"
+            "time": "2024-10-05T22:11:16+00:00"
         },
         {
             "name": "symfony/stopwatch",
@@ -6771,16 +6771,16 @@
         },
         {
             "name": "symfony/ux-turbo",
-            "version": "v2.19.3",
+            "version": "v2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ux-turbo.git",
-                "reference": "4a38f267193017958d487171c0a86e64f36164a3"
+                "reference": "075c609e54fc421c6b1c1974e46e9a8b2d44277c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ux-turbo/zipball/4a38f267193017958d487171c0a86e64f36164a3",
-                "reference": "4a38f267193017958d487171c0a86e64f36164a3",
+                "url": "https://api.github.com/repos/symfony/ux-turbo/zipball/075c609e54fc421c6b1c1974e46e9a8b2d44277c",
+                "reference": "075c609e54fc421c6b1c1974e46e9a8b2d44277c",
                 "shasum": ""
             },
             "require": {
@@ -6795,21 +6795,22 @@
                 "doctrine/doctrine-bundle": "^2.4.3",
                 "doctrine/orm": "^2.8 | 3.0",
                 "phpstan/phpstan": "^1.10",
+                "symfony/asset-mapper": "^6.4|^7.0",
                 "symfony/debug-bundle": "^5.4|^6.0|^7.0",
                 "symfony/expression-language": "^5.4|^6.0|^7.0",
                 "symfony/form": "^5.4|^6.0|^7.0",
-                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^6.4|^7.0",
                 "symfony/mercure-bundle": "^0.3.7",
                 "symfony/messenger": "^5.4|^6.0|^7.0",
-                "symfony/panther": "^1.0|^2.0",
+                "symfony/panther": "^2.1",
                 "symfony/phpunit-bridge": "^5.4|^6.0|^7.0",
                 "symfony/process": "^5.4|6.3.*|^7.0",
                 "symfony/property-access": "^5.4|^6.0|^7.0",
                 "symfony/security-core": "^5.4|^6.0|^7.0",
                 "symfony/stopwatch": "^5.4|^6.0|^7.0",
-                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
-                "symfony/web-profiler-bundle": "^5.4|^6.0|^7.0",
-                "symfony/webpack-encore-bundle": "^2.1.1"
+                "symfony/twig-bundle": "^6.4|^7.0",
+                "symfony/ux-twig-component": "^2.21",
+                "symfony/web-profiler-bundle": "^5.4|^6.0|^7.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -6848,7 +6849,7 @@
                 "turbo-stream"
             ],
             "support": {
-                "source": "https://github.com/symfony/ux-turbo/tree/v2.19.3"
+                "source": "https://github.com/symfony/ux-turbo/tree/v2.21.0"
             },
             "funding": [
                 {
@@ -6864,7 +6865,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-14T04:55:38+00:00"
+            "time": "2024-10-21T19:07:02+00:00"
         },
         {
             "name": "symfony/validator",
@@ -7207,16 +7208,16 @@
         },
         {
             "name": "symfony/webpack-encore-bundle",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/webpack-encore-bundle.git",
-                "reference": "75cb918df3f65e28cf0d4bc03042bc45ccb19dd0"
+                "reference": "e335394b68a775a9b2bd173a8ba4fd2001f3870c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/75cb918df3f65e28cf0d4bc03042bc45ccb19dd0",
-                "reference": "75cb918df3f65e28cf0d4bc03042bc45ccb19dd0",
+                "url": "https://api.github.com/repos/symfony/webpack-encore-bundle/zipball/e335394b68a775a9b2bd173a8ba4fd2001f3870c",
+                "reference": "e335394b68a775a9b2bd173a8ba4fd2001f3870c",
                 "shasum": ""
             },
             "require": {
@@ -7229,6 +7230,7 @@
             },
             "require-dev": {
                 "symfony/framework-bundle": "^5.4 || ^6.2 || ^7.0",
+                "symfony/http-client": "^5.4 || ^6.2 || ^7.0",
                 "symfony/phpunit-bridge": "^5.4 || ^6.2 || ^7.0",
                 "symfony/twig-bundle": "^5.4 || ^6.2 || ^7.0",
                 "symfony/web-link": "^5.4 || ^6.2 || ^7.0"
@@ -7255,10 +7257,10 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Integration with your Symfony app & Webpack Encore!",
+            "description": "Integration of your Symfony app with Webpack Encore",
             "support": {
                 "issues": "https://github.com/symfony/webpack-encore-bundle/issues",
-                "source": "https://github.com/symfony/webpack-encore-bundle/tree/v2.1.1"
+                "source": "https://github.com/symfony/webpack-encore-bundle/tree/v2.2.0"
             },
             "funding": [
                 {
@@ -7274,7 +7276,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-22T18:53:08+00:00"
+            "time": "2024-10-02T07:27:19+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -10001,7 +10003,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
@@ -10009,6 +10011,6 @@
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

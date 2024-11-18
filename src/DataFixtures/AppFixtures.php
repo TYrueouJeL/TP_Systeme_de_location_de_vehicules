@@ -68,6 +68,8 @@ class AppFixtures extends Fixture
         $customer->setEmail('johndoe@gmail.com');
         $customer->setPhone('0102030405');
         $customer->setDrivingLicense('123456789');
+        $customer->setPassword('rieng');
+        $customer->setRoles(['ROLE_USER']);
         $customerTab[] = $customer;
 
         $customer = new Customer();
@@ -79,6 +81,8 @@ class AppFixtures extends Fixture
         $customer->setEmail('janedoe@gmail.com');
         $customer->setPhone('0102030406');
         $customer->setDrivingLicense('123456788');
+        $customer->setPassword('rieng');
+        $customer->setRoles(['ROLE_USER']);
         $customerTab[] = $customer;
 
         $customer = new Customer();
@@ -90,6 +94,8 @@ class AppFixtures extends Fixture
         $customer->setEmail('jackdoe@gmail.com');
         $customer->setPhone('0102030407');
         $customer->setDrivingLicense('123456787');
+        $customer->setPassword('rieng');
+        $customer->setRoles(['ROLE_USER']);
         $customerTab[] = $customer;
 
         $state = new State();
